@@ -1,0 +1,43 @@
+$colors: (
+        primary: #1ccdca,
+        secondary: #19b8b5,
+        progresbarbg: #3c464d,
+        progresbarsecondary: #14181b,
+        webdesign: #0bacb8,
+        programing: #3a94b2,
+        html: #1ccdca,
+        wordpres: #00c194,
+        redlight: #e74c3c,
+        reddark: #cf2c1d,
+);
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+#section_bg {
+  background-image: url("../css/img/bg_header4.jpg");
+  background-size: cover;
+}
+.progress {
+  margin-bottom: 30px;
+}
+#progres_barr {
+  padding: 90px 50px;
+  background: map_get($colors, progresbarbg);
+  .progress{
+    background: map_get($colors, progresbarsecondary);
+    margin: 0 50px 30px 50px;
+  }
+  div {
+    h2 {
+      margin: 20px 50px;
+      color: white;
+    }
+    p {
+      margin: 0 50px 30px 50px;
+      color: gray;
+    }
+  }
+}

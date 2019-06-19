@@ -1,0 +1,25 @@
+.dropdown:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none; }
+
+#section_bg {
+  background-image: url("../css/img/bg_header4.jpg");
+  background-size: cover; }
+
+.progress {
+  margin-bottom: 30px; }
+
+#progres_barr {
+  padding: 90px 50px;
+  background: #3c464d; }
+  #progres_barr .progress {
+    background: #14181b;
+    margin: 0 50px 30px 50px; }
+  #progres_barr div h2 {
+    margin: 20px 50px;
+    color: white; }
+  #progres_barr div p {
+    margin: 0 50px 30px 50px;
+    color: gray; }
