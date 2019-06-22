@@ -87,3 +87,24 @@
 #borders_number {
   border-bottom: #eaebed solid 1px;
   border-top: #eaebed solid 1px; }
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important; }
+
+.affix + .container {
+  padding-top: 70px; }
+
+.grow circle {
+  transition: all .25s ease-in-out; }
+
+.grow h6 {
+  transition: all .35s ease-in-out; }
+
+.grow :hover .circle {
+  background: #1ccdca;
+  transform: scale(1.1); }
+
+.grow :hover h6 {
+  color: #1ccdca; }
