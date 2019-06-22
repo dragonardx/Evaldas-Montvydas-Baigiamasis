@@ -1,3 +1,6 @@
+#top_head {
+  border-bottom: #eaebed solid 1px; }
+
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
@@ -8,18 +11,79 @@
   background-image: url("../css/img/bg_header4.jpg");
   background-size: cover; }
 
-.progress {
-  margin-bottom: 30px; }
-
-#progres_barr {
+#progress_barr {
   padding: 90px 50px;
-  background: #3c464d; }
-  #progres_barr .progress {
-    background: #14181b;
+  background-color: #3c464d; }
+  #progress_barr .progress {
+    margin-bottom: 30px;
+    height: 35px; }
+  #progress_barr .progress {
+    background-color: #14181b;
     margin: 0 50px 30px 50px; }
-  #progres_barr div h2 {
+  #progress_barr div h2 {
     margin: 20px 50px;
     color: white; }
-  #progres_barr div p {
+  #progress_barr div p {
     margin: 0 50px 30px 50px;
     color: gray; }
+
+.icon {
+  font-size: 30px;
+  color: aqua;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  text-align: center; }
+
+#slider {
+  background-color: #14181b; }
+  #slider #slider_bot {
+    padding: 50px 15px; }
+  #slider h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px; }
+  #slider p {
+    text-align: center; }
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid aqua;
+  width: 80px;
+  height: 80px; }
+  .circle span {
+    position: relative; }
+
+#bar1 {
+  width: 0; }
+
+#bar2 {
+  width: 0; }
+
+#bar3 {
+  width: 0; }
+
+#bar4 {
+  width: 0; }
+
+#bar5 {
+  width: 0; }
+
+.nav-item a {
+  padding: 6px 25px; }
+
+.tab-content {
+  border-bottom: #e5e5e5 solid 1px;
+  border-left: #e5e5e5 solid 1px;
+  border-right: #e5e5e5 solid 1px;
+  padding: 20px 25px; }
+
+.spacer {
+  padding: 90px 0; }
+
+#slash {
+  font-size: 28px; }
+
+#borders_number {
+  border-bottom: #eaebed solid 1px;
+  border-top: #eaebed solid 1px; }

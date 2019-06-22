@@ -5,82 +5,97 @@
     <title>Title</title>
     <link rel="stylesheet" href="css/baigiamasis.css">
     <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<header class="container">
-    <div class="row">
-        <div class="col-7 px-0">
-            <div class="dropdown">
+<div class="container-fluid bg-light" id="top_head">
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col-2 px-0">
+                        <div class="dropdown">
                 <span>
-                <i class="fas fa-globe-americas"></i>
+                <i class="text-secondary fas fa-globe-americas"></i>
                 </span>
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    ENGLISH
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">ENGLISH</a>
-                    <a class="dropdown-item" href="#">RTL</a>
+                            <button class="btn dropdown text-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                ENGLISH
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                    ENGLISH
+                                    <i class="fas fa-check"></i>
+                                </a>
+                                <a class="dropdown-item" href="#">RTL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-secondary col-10 px-0 my-auto">
+                    <span>
+                        <i class="fas fa-key"></i>
+                        <a>LOGIN</a>
+                    </span>
+                        <span>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Call Us :</span>
+                        (123) 456 - 7890
+                    </span>
+                        <span>
+                        <i class="fab fa-rocketchat"></i>
+                        <span>Support :</span>
+                        (123) 456 - 7890
+                    </span>
+                    </div>
                 </div>
-                <span>
-              <i class="fas fa-key"></i>
-                <a>LOGIN</a>
-            </span>
-                <span>
-               <i class="fas fa-phone-alt"></i>
-                <span>Call Us :</span>
-                (123) 456 - 7890
-            </span>
-                <span>
-                <i class="fab fa-rocketchat"></i>
-                <span>Support :</span>
-                (123) 456 - 7890
-            </span>
             </div>
-        </div>
-        <div class="col-5 px-0">
-            <div>
+            <div class="text-secondary col-5 px-0 my-auto">
                 <div>
-                    <a href="#" target="_blank">
-                        <span>Facebook</span>
-                        <span></span>
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <span>Twitter</span>
-                        <span></span>
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <span>Dribble</span>
-                        <span></span>
-                        <i class="fab fa-google"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <span>Linkedin</span>
-                        <span></span>
-                        <i class="fab fa-skype"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <span>Vimeo</span>
-                        <span></span>
-                        <i class="fab fa-wordpress"></i>
-                    </a>
+                    <div>
+                        <a href="#" target="_blank" class="text-secondary">
+                            <span>Facebook</span>
+                            <span></span>
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-secondary">
+                            <span>Twitter</span>
+                            <span></span>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-secondary">
+                            <span>Google</span>
+                            <span></span>
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-secondary">
+                            <span>Skype</span>
+                            <span></span>
+                            <i class="fab fa-skype"></i>
+                        </a>
+                        <a href="#" target="_blank" class="text-secondary">
+                            <span>Wordpress</span>
+                            <span></span>
+                            <i class="fab fa-wordpress"></i>
+                        </a>
 
-                    <a href="#">
-                        <span>Skype</span>
-                        <span></span>
-                        <i class="fab fa-vimeo-v"></i>
-                    </a>
+                        <a href="#" target="_blank" class="text-secondary">
+                            <span>Vimeo</span>
+                            <span></span>
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<header class="container">
     <div class="row">
         <div class="col-12 px-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light px-0">
                 <a href="#">
                     <img src="css/img/logo-dark.png" alt="Enar Logo">
                 </a>
@@ -94,12 +109,12 @@
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 PAGES
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-light" href="#">Action</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item text-light" href="#">Another action</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item text-light" href="#">Something else here</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -121,11 +136,13 @@
                             <a class="nav-link" href="#">TEAM</a>
                         </li>
                     </ul>
-                    <form>
-                        <input type="search" name="search" placeholder="Search Here ...">
-                        <button type="button"></button>
+                    <div class="form-group">
+                            <i class="fas fa-search"></i>
+                        <input type="search" class="form-control" id="search" placeholder="Search Here ...">
+                    </div>
+                    <button type="button">
                         <i class="fas fa-cart-plus"></i>
-                    </form>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -163,132 +180,161 @@
         </div>
     </div>
 </section>
-<section class="container">
-    <div class="row">
-        <div class="coll px-0">
-            <h4>BEST HTML5 THEME EVER!</h4>
-            <h6>
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                alteration
-                in som form, by injected humour of this randomised words which don't look even slightly believable.
-            </h6>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4 px-0">
-            <span>
-                <i class="fas fa-desktop"></i>
-            </span>
-            <div>
-                <h6>SUPER CODING</h6>
-                <span>There are many variations of demo text passed sage of Lorem Ipsum available the majority.
-               There are many variations of demo.</span>
+<section>
+    <div class="container-fluid" id="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 px-0" id="slider_bot">
+                    <h4>BEST HTML5 THEME EVER!</h4>
+                    <p class="text-secondary">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
+                        alteration
+                        in som form, by injected humour of this randomised words which don't look even slightly
+                        believable.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="col-4 px-0">
-            <h6>BEST USER INTERFACE</h6>
-            <span>There are many variations of demo text passed sage of Lorem Ipsum available the majority.
-               There are many variations of demo.</span>
+    </div>
+</section>
+<section class="container spacer">
+    <div class="row">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-3">
+                    <div class="circle">
+                        <span>
+                        <i class="fas fa-desktop icon"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-9 text-secondary">
+                    <h6>SUPER CODING</h6>
+                    <span>There are many variations of demo text passed sage of Lorem Ipsum available the majority.
+                            There are many variations of demo.
+                        </span>
+                </div>
+            </div>
         </div>
-        <div class="col-4 px-0">
-            <h6>UNIQUE DESIGN</h6>
-            <span>There are many variations of demo text passed sage of Lorem Ipsum available the majority.
-               There are many variations of demo.</span>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-3">
+                    <div class="circle">
+                         <span>
+                        <i class="fas fa-desktop icon"></i>
+                    </span>
+                    </div>
+                </div>
+                <div class="col-9 text-secondary">
+                    <h6>BEST USER INTERFACE</h6>
+                    <span>
+                        There are many variations of demo text passed sage of Lorem Ipsum available the majority.
+                        There are many variations of demo.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-3">
+                    <div class="circle">
+                        <span>
+                            <i class="fas fa-puzzle-piece icon"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-9 text-secondary">
+                    <h6>UNIQUE DESIGN</h6>
+                    <span>
+                        There are many variations of demo text passed sage of Lorem Ipsum available the majority.
+                        There are many variations of demo.
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <section class="container-fluid" id="section_bg">
     <div class="row">
-        <div class="col-6 px-0" id="progres_barr">
+        <div class="col-6 px-0" id="progress_barr">
             <div>
                 <h2>OUR SKILLS</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum has been the
+                <p>Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum has been
+                    the
                     industry standar dummyy text ever since the when an iunesi known printer of took a galley of type.
                 </p>
             </div>
             <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
-                     aria-valuemin="0" aria-valuemax="100">80%
+                <div class="progress-bar bg-info" id="bar1" role="progressbar">
                 </div>
             </div>
             <div class="progress">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%" aria-valuenow="60"
-                     aria-valuemin="0" aria-valuemax="100">60%
+                <div class="progress-bar bg-primary" id="bar2" role="progressbar">
                 </div>
             </div>
             <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70"
-                     aria-valuemin="0" aria-valuemax="100">70%
+                <div class="progress-bar bg-info" id="bar3" role="progressbar">
                 </div>
             </div>
             <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                     aria-valuemin="0" aria-valuemax="100">100%
+                <div class="progress-bar bg-success" id="bar4" role="progressbar">
                 </div>
             </div>
             <div class="progress">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%" aria-valuenow="40"
-                     aria-valuemin="0" aria-valuemax="100">40%
+                <div class="progress-bar bg-danger" id="bar5" role="progressbar">
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="container">
+<section class="container spacer">
     <div class="row">
-        <div class="col-6 px-0">
+        <div class="col-md-6">
             <div class="main_title upper small">
-                <h2>
+                <h3>
                     <span class="line">
                     <span class="dot"></span>
                     </span>
                     Why Choose Us?
-                </h2>
+                </h3>
             </div>
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home">Quality</a>
+                    <a class="nav-link active text-secondary" data-toggle="tab" href="#home">
+                        <h6>Quality</h6>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu1">Design</a>
+                    <a class="nav-link text-secondary" data-toggle="tab" href="#menu1">
+                        <h6>Design</h6>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu2">Programing</a>
+                    <a class="nav-link text-secondary" data-toggle="tab" href="#menu2">
+                        <h6>Programing</h6>
+                    </a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane container active" id="home">
                     <div class="row">
-                        <div class="col-10 px-0">
+                        <div class="col-10 px-0 text-secondary">
                             <span>Lore Ipsum is simply dummy text of the printing and typeseting industry.
                                 Lorem in text Ipsum has been industry standart dummy text ever since the when an lunesi know.
                             </span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 px-0">
+                        <div class="col-6 px-0 text-secondary">
                             <ul>
                                 <li>Multiple Layout</li>
-                            </ul>
-                            <ul>
                                 <li>Awesome Short Codes</li>
-                            </ul>
-                            <ul>
                                 <li>Browser Compatibility</li>
-                            </ul>
-                            <ul>
                                 <li>Easy to Edit Animations</li>
-                            </ul>
-                            <ul>
                                 <li>Parallax Effect</li>
-                            </ul>
-                            <ul>
                                 <li>Responsive Design</li>
-                            </ul>
-                            <ul>
                                 <li>Many Home Page Versions</li>
-                            </ul>
-                            <ul>
                                 <li>Many Blog Pages</li>
                             </ul>
                         </div>
@@ -299,36 +345,22 @@
                 </div>
                 <div class="tab-pane container fade" id="menu1">
                     <div class="row">
-                        <div class="col-10 px-0">
+                        <div class="col-10 px-0 text-secondary">
                             <span>Lore Ipsum is simply dummy text of the printing and typeseting industry.
                                 Lorem in text Ipsum has been industry standart dummy text ever since the when an lunesi know.
                             </span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 px-0">
+                        <div class="col-6 px-0 text-secondary">
                             <ul>
                                 <li>Multiple Layout</li>
-                            </ul>
-                            <ul>
                                 <li>Awesome Short Codes</li>
-                            </ul>
-                            <ul>
                                 <li>Browser Compatibility</li>
-                            </ul>
-                            <ul>
                                 <li>Easy to Edit Animations</li>
-                            </ul>
-                            <ul>
                                 <li>Parallax Effect</li>
-                            </ul>
-                            <ul>
                                 <li>Responsive Design</li>
-                            </ul>
-                            <ul>
                                 <li>Many Home Page Versions</li>
-                            </ul>
-                            <ul>
                                 <li>Many Blog Pages</li>
                             </ul>
                         </div>
@@ -339,36 +371,22 @@
                 </div>
                 <div class="tab-pane container fade" id="menu2">
                     <div class="row">
-                        <div class="col-10 px-0">
+                        <div class="col-10 px-0 text-secondary">
                             <span>Lore Ipsum is simply dummy text of the printing and typeseting industry.
                                 Lorem in text Ipsum has been industry standart dummy text ever since the when an lunesi know.
                             </span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 px-0">
+                        <div class="col-6 px-0 text-secondary">
                             <ul>
                                 <li>Multiple Layout</li>
-                            </ul>
-                            <ul>
                                 <li>Awesome Short Codes</li>
-                            </ul>
-                            <ul>
                                 <li>Browser Compatibility</li>
-                            </ul>
-                            <ul>
                                 <li>Easy to Edit Animations</li>
-                            </ul>
-                            <ul>
                                 <li>Parallax Effect</li>
-                            </ul>
-                            <ul>
                                 <li>Responsive Design</li>
-                            </ul>
-                            <ul>
                                 <li>Many Home Page Versions</li>
-                            </ul>
-                            <ul>
                                 <li>Many Blog Pages</li>
                             </ul>
                         </div>
@@ -379,28 +397,30 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 px-0">
+        <div class="col-6">
             <div class="main_title upper small">
-                <h2>
+                <h3>
                     <span class="line">
                         <span class="dot"></span>
                     </span>
                     Why Work With Us?
-                </h2>
+                </h3>
             </div>
             <div id="accordion">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                    <div class="card-header py-0" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            <span>
+                                <i class="far fa-user"></i>
+                            </span>
+                            <button class="btn btn-link text-secondary" data-toggle="collapse" data-target="#collapseOne"
                                     aria-expanded="true" aria-controls="collapseOne">
                                 CUSTOMER SERVICES 24/7
                             </button>
                         </h5>
                     </div>
-
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
+                        <div class="card-body text-secondary">
                             <a>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
@@ -420,16 +440,19 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingTwo">
+                    <div class="card-header py-0" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            <span>
+                                <i class="far fa-heart"></i>
+                            </span>
+                            <button class="btn btn-link collapsed text-secondary" data-toggle="collapse" data-target="#collapseTwo"
                                     aria-expanded="false" aria-controls="collapseTwo">
                                 INTEGRITY AND HONESTY
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
+                        <div class="card-body text-secondary">
                             <a>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
@@ -449,16 +472,19 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="card-header py-0" id="headingThree">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            <span>
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <button class="btn btn-link collapsed text-secondary" data-toggle="collapse" data-target="#collapseThree"
                                     aria-expanded="false" aria-controls="collapseThree">
                                 THE BEST SALES ON THE COUNTRY
                             </button>
                         </h5>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
+                        <div class="card-body text-secondary">
                             <a>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has
@@ -480,18 +506,56 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-3 px-0">
-            <span></span>
-        </div>
-        <div class="col-3 px-0">
-
-        </div>
-        <div class="col-3 px-0">
-
-        </div>
-        <div class="col-3 px-0">
-
+</section>
+<section class="container-fluid bg-light " id="borders_number">
+    <div class="container spacer">
+        <div class="row">
+            <div class="col-md-3 px-0">
+                <div>
+                    <i class="far fa-user fa-2x"></i>
+                </div>
+                <div class="my-4">
+                    <h4 class="value" data-speed="4000" data-from="0" data-to="1500">0</h4>
+                </div>
+                <div>
+                    <h4>Clients</h4>
+                </div>
+            </div>
+            <div class="col-md-3 px-0">
+                <span>
+                    <i class="far fa-heart fa-2x"></i>
+                </span>
+                <h4 class="my-4">
+                    <span class="value" data-speed="4000" data-from="0" data-to="13">0</span>
+                </h4>
+                <div>
+                    <h4>Awards</h4>
+                </div>
+            </div>
+            <div class="col-md-3 px-0">
+                <span>
+                    <i class="fas fa-chevron-left fa-lg"></i>
+                    <span id="slash">/</span>
+                    <i class="fas fa-chevron-right fa-lg"></i>
+                </span>
+                <h4 class="my-4">
+                    <span class="value" data-speed="4000" data-from="0" data-to="94771">0</span>
+                </h4>
+                <div>
+                    <h4>Line Of Code</h4>
+                </div>
+            </div>
+            <div class="col-md-3 px-0">
+                <span>
+                   <i class="far fa-paper-plane fa-2x"></i>
+                </span>
+                <h4 class="my-4">
+                    <span class="value" data-speed="4000" data-from="0" data-to="384">0</span>
+                </h4>
+                <div>
+                    <h4>Projects</h4>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -1,33 +1,45 @@
 $colors: (
-        primary: #1ccdca,
-        secondary: #19b8b5,
-        progresbarbg: #3c464d,
-        progresbarsecondary: #14181b,
-        webdesign: #0bacb8,
-        programing: #3a94b2,
-        html: #1ccdca,
-        wordpres: #00c194,
-        redlight: #e74c3c,
-        reddark: #cf2c1d,
+primary: #1ccdca,
+secondary: #19b8b5,
+progresbarbg: #3c464d,
+progresbarsecondary: #14181b,
+webdesign: #0bacb8,
+programing: #3a94b2,
+html: #1ccdca,
+wordpres: #00c194,
+redlight: #e74c3c,
+reddark: #cf2c1d,
+slidertext: #aaa,
+headericon: #777777,
+borders: #eaebed
 );
+#top_head {
+  border-bottom: map_get($colors, borders) solid 1px;
+}
 .dropdown:hover > .dropdown-menu {
   display: block;
 }
+
 .dropdown > .dropdown-toggle:active {
   pointer-events: none;
 }
+
 #section_bg {
   background-image: url("../css/img/bg_header4.jpg");
   background-size: cover;
 }
-.progress {
-  margin-bottom: 30px;
-}
-#progres_barr {
+
+#progress_barr {
+  .progress {
+    margin-bottom: 30px;
+    height: 35px;
+  }
+
   padding: 90px 50px;
-  background: map_get($colors, progresbarbg);
-  .progress{
-    background: map_get($colors, progresbarsecondary);
+  background-color: map_get($colors, progresbarbg);
+
+  .progress {
+    background-color: map_get($colors, progresbarsecondary);
     margin: 0 50px 30px 50px;
   }
   div {
@@ -35,9 +47,83 @@ $colors: (
       margin: 20px 50px;
       color: white;
     }
+
     p {
       margin: 0 50px 30px 50px;
       color: gray;
     }
   }
+}
+
+.icon {
+  font-size: 30px;
+  color: aqua;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  text-align: center;
+}
+
+#slider {
+  background-color: #14181b;
+  #slider_bot {
+    padding: 50px 15px;
+}
+
+  h4 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid aqua;
+  width: 80px;
+  height: 80px;
+
+  span {
+    position: relative;
+  }
+}
+#bar1 {
+  width: 0;
+}
+#bar2 {
+  width: 0;
+}
+#bar3 {
+  width: 0;
+}
+#bar4 {
+  width: 0;
+}
+#bar5 {
+  width: 0;
+}
+.nav-item {
+  a {
+    padding: 6px 25px;
+  }
+}
+.tab-content {
+  border-bottom: #e5e5e5 solid 1px;
+  border-left: #e5e5e5 solid 1px;
+  border-right: #e5e5e5 solid 1px;
+  padding: 20px 25px;
+}
+.spacer {
+  padding: 90px 0;
+}
+#slash {
+  font-size: 28px;
+}
+#borders_number {
+  border-bottom: map_get($colors, borders) solid 1px;
+  border-top: map_get($colors, borders) solid 1px;
 }
