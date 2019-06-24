@@ -94,6 +94,7 @@ $colors: (
     position: relative;
   }
 }
+
 #bar1 {
   width: 0;
 }
@@ -119,15 +120,18 @@ $colors: (
     padding: 6px 25px;
   }
 }
+
 .navbar {
   input {
     border-radius: 20px;
   }
+
   button {
     background: none;
     border-radius: 50%;
   }
 }
+
 .tab-content {
   border-bottom: #e5e5e5 solid 1px;
   border-left: #e5e5e5 solid 1px;
@@ -148,35 +152,70 @@ $colors: (
   border-top: map_get($colors, borders) solid 1px;
 }
 
-.grow circle {
+.grow .circle {
   transition: all .25s ease-in-out;
 }
 
-.grow{
+.grow {
   h6 {
     transition: all .35s ease-in-out;
   }
+
   img {
     transition: all .35s ease-in-out;
   }
 }
+
 .grow :hover {
   .circle {
     background: map_get($colors, primary);
     transform: scale(1.1);
+
+    i {
+      color: white;
+    }
   }
+
   h6 {
     color: map_get($colors, primary);
   }
+
   .img {
     transform: scale(1.1);
   }
 }
+
 .color {
-  i{
-    color: map_get($colors,primary);
+  i {
+    color: map_get($colors, primary);
   }
-  span{
-  color: map_get($colors,primary);
+
+  span {
+    color: map_get($colors, primary);
   }
+}
+
+#personel {
+  text-align: center;
+  font-size: 27px;
+  font-weight: lighter;
+}
+
+.team-photo {
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 5px;
+    background: white;
+  }
+}
+
+.text {
+  text-align: right;
+}
+
+.text2 {
+  text-align: left;
 }
