@@ -94,7 +94,6 @@ $colors: (
     position: relative;
   }
 }
-
 #bar1 {
   width: 0;
 }
@@ -120,7 +119,15 @@ $colors: (
     padding: 6px 25px;
   }
 }
-
+.navbar {
+  input {
+    border-radius: 20px;
+  }
+  button {
+    background: none;
+    border-radius: 50%;
+  }
+}
 .tab-content {
   border-bottom: #e5e5e5 solid 1px;
   border-left: #e5e5e5 solid 1px;
@@ -141,31 +148,35 @@ $colors: (
   border-top: map_get($colors, borders) solid 1px;
 }
 
-.affix {
-  top: 0;
-  width: 100%;
-  z-index: 9999 !important;
-}
-
-.affix + .container {
-  padding-top: 70px;
-}
-
 .grow circle {
   transition: all .25s ease-in-out;
 }
 
-.grow h6 {
-  transition: all .35s ease-in-out;
+.grow{
+  h6 {
+    transition: all .35s ease-in-out;
+  }
+  img {
+    transition: all .35s ease-in-out;
+  }
 }
-
 .grow :hover {
   .circle {
     background: map_get($colors, primary);
     transform: scale(1.1);
   }
-
   h6 {
     color: map_get($colors, primary);
+  }
+  .img {
+    transform: scale(1.1);
+  }
+}
+.color {
+  i{
+    color: map_get($colors,primary);
+  }
+  span{
+  color: map_get($colors,primary);
   }
 }
