@@ -1,3 +1,6 @@
+.sticky-top {
+  background: white; }
+
 #top_head {
   border-bottom: #eaebed solid 1px; }
 
@@ -81,7 +84,7 @@
 #slash {
   font-size: 28px; }
 
-#borders_number {
+.borders {
   border-bottom: #eaebed solid 1px;
   border-top: #eaebed solid 1px; }
 
@@ -149,26 +152,15 @@
       height: 20px;
       text-align: center; }
 
+.text3 {
+  color: #1ccdca; }
+
 .red span {
   background: #e74c3c;
   color: white; }
 
 .red a {
   background: #cf2c1d; }
-
-span .red {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  font-size: 20px;
-  animation: red-ani;
-  animation-duration: 3s; }
-
-@keyframes red-ani {
-  0% {
-    left: -50px; }
-  100% {
-    left: 20%; } }
 
 .circle2 button {
   border-radius: 100%;
@@ -184,3 +176,41 @@ span .red {
 
 .grow2:hover h5 {
   color: #1ccdca; }
+
+#form h4 {
+  color: #1ccdca; }
+  #form h4 i {
+    color: #1ccdca; }
+
+#form input {
+  border: #eaebed solid 1px;
+  width: 100%;
+  border-radius: 4px; }
+
+#form textarea {
+  width: 100%;
+  border-radius: 4px;
+  min-height: 200px;
+  border: #eaebed solid 1px; }
+
+#form button {
+  border: none;
+  width: 100%;
+  background: #1ccdca;
+  transition: 1s; }
+
+#form button:hover {
+  background: #3c464d; }
+
+#map_text {
+  background: #684962; }
+  #map_text h4 {
+    color: white; }
+
+iframe {
+  width: 100%;
+  height: 350px; }
+
+footer .smal-img {
+  width: 90px;
+  height: 60px; }

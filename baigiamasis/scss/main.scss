@@ -11,8 +11,12 @@ $colors: (
         reddark: #cf2c1d,
         slidertext: #aaa,
         headericon: #777777,
-        borders: #eaebed
+        borders: #eaebed,
+        maps: #684962,
 );
+.sticky-top {
+  background: white;
+}
 #top_head {
   border-bottom: map_get($colors, borders) solid 1px;
 }
@@ -133,7 +137,7 @@ $colors: (
   font-size: 28px;
 }
 
-#borders_number {
+.borders {
   border-bottom: map_get($colors, borders) solid 1px;
   border-top: map_get($colors, borders) solid 1px;
 }
@@ -217,7 +221,6 @@ $colors: (
 
 .text2 {
   text-align: left;
-
   a {
     border-radius: 50%;
     border: map_get($colors, borders) solid 1px;
@@ -231,7 +234,9 @@ $colors: (
     }
   }
 }
-
+.text3 {
+  color: map_get($colors,primary);
+}
 .red {
   span {
     background: map_get($colors, redlight);
@@ -240,24 +245,6 @@ $colors: (
 
   a {
     background: map_get($colors, reddark);
-  }
-}
-
-span .red {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  font-size: 20px;
-  animation: red-ani;
-  animation-duration: 3s;
-}
-
-@keyframes red-ani {
-  0% {
-    left: -50px;
-  }
-  100% {
-    left: 20%;
   }
 }
 
@@ -284,4 +271,49 @@ span .red {
   h5 {
     color: map_get($colors,primary);
   }
+}
+#form {
+  h4 {
+    color: map_get($colors,primary);
+    i {
+      color: map_get($colors,primary);
+    }
+  }
+  input {
+    border: map_get($colors,borders) solid 1px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  textarea {
+    width: 100%;
+    border-radius: 4px;
+    min-height: 200px;
+    border: map_get($colors,borders) solid 1px;
+  }
+  button {
+    border: none;
+    width: 100%;
+    background: map_get($colors,primary);
+    transition: 1s;
+  }
+}
+#form button:hover {
+  background: map_get($colors,progresbarbg);
+}
+#map_text {
+  background: map_get($colors,maps);
+  h4 {
+    color: white;
+  }
+}
+iframe {
+  width: 100%;
+  height: 350px;
+}
+footer {
+  .smal-img {
+    width: 90px;
+    height: 60px;
+  }
+
 }
