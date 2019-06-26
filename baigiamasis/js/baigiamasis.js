@@ -1,20 +1,98 @@
 "use strict";
+
 function barrFill() {
-    var elem1 = document.getElementById('bar1');
-    var elem2 = document.getElementById('bar2');
-    var elem3 = document.getElementById('bar3');
-    var elem4 = document.getElementById('bar4');
-    var elem5 = document.getElementById('bar5');
-    var width = 1;
-    var id = setInterval(frame, 80);
-    function frame() {
-        if (width >= 80) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem1.style.width = width + '%';
-            elem1.innerHTML = width * 1  + '%';
-        }
+    var elem1 = document.getElementsByClassName('progress-bar');
+    for (var i = 0; i < elem1.length; i++) {
+        var elm = elem1[i];
+        elm.getElementsByClassName('cloud');
+        elm.style.width = parseFloat(elm.getAttribute('data-max')) + "%"
     }
 }
+
 barrFill();
+
+// var width = 1;
+// var id = setInterval(frame, 80);
+// function frame() {
+//     if (width >= 80) {
+//         clearInterval(id);
+//     } else {
+//         width++;
+//         elem1.style.width = width + '%';
+//         elem1.innerHTML = width * 1  + '%';
+//     }
+// }
+// }
+(function ($) {
+    $.fn.countTo = function (options) {
+        options = options || {};
+        return $(this).each(function () {            // set options for current element
+            var settings = $.extend({}, $.fn.countTo.defaults, {
+                from: $(this).data('from'),
+                to: $(this).data('to'),
+                speed: $(this).data('speed'),
+                refreshInterval: $(this).data('refresh-interval'),
+                decimals: $(this).data('decimals')
+            }, options);            // how many times to update the value, and how much to increment the value on each update
+            var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                increment = (settings.to - settings.from) / loops;            // references & variables that will change with each update
+            var self = this, $self = $(this), loopCount = 0, value = settings.from, data = $self.data('countTo') || {};
+            $self.data('countTo', data);            // if an existing interval can be found, clear it first
+            if (data.interval) {
+                clearInterval(data.interval);
+            }
+            data.interval = setInterval(updateTimer, settings.refreshInterval);            // initialize the element with the starting value
+            render(value);
+
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+                render(value);
+                if (typeof (settings.onUpdate) == 'function') {
+                    settings.onUpdate.call(self, value);
+                }
+                if (loopCount >= loops) {                    // remove the interval
+                    $self.removeData('countTo');
+                    clearInterval(data.interval);
+                    value = settings.to;
+                    if (typeof (settings.onComplete) == 'function') {
+                        settings.onComplete.call(self, value);
+                    }
+                }
+            }
+
+            function render(value) {
+                var formattedValue = settings.formatter.call(self, value, settings);
+                $self.html(formattedValue);
+            }
+        });
+    };
+    $.fn.countTo.defaults = {
+        from: 0,               // the number the element should start at
+        to: 0,                 // the number the element should end at
+        speed: 1000,           // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,           // the number of decimal places to show
+        formatter: formatter,  // handler for formatting the value before rendering
+        onUpdate: null,        // callback method for every time the element is updated
+        onComplete: null       // callback method for when the element finishes updating
+    };
+
+    function formatter(value, settings) {
+        return value.toFixed(settings.decimals);
+    }
+}(jQuery));
+jQuery(function ($) {    // custom formatting example
+    $('.count-number').data('countToOptions', {
+        formatter: function (value, options) {
+            return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+        }
+    });    // start all the timers
+    $('.timer').each(count);
+
+    function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+    }
+});

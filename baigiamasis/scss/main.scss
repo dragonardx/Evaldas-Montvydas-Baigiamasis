@@ -95,24 +95,10 @@ $colors: (
   }
 }
 
-#bar1 {
+.progress-bar {
+  transition: 3s;
   width: 0;
-}
-
-#bar2 {
-  width: 0;
-}
-
-#bar3 {
-  width: 0;
-}
-
-#bar4 {
-  width: 0;
-}
-
-#bar5 {
-  width: 0;
+  position: relative;
 }
 
 .nav-item {
@@ -214,8 +200,88 @@ $colors: (
 
 .text {
   text-align: right;
+
+  a {
+    border-radius: 50%;
+    border: map_get($colors, borders) solid 1px;
+    background: white;
+    padding: 4px;
+
+    i {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+    }
+  }
 }
 
 .text2 {
   text-align: left;
+
+  a {
+    border-radius: 50%;
+    border: map_get($colors, borders) solid 1px;
+    background: white;
+    padding: 4px;
+
+    i {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.red {
+  span {
+    background: map_get($colors, redlight);
+    color: white;
+  }
+
+  a {
+    background: map_get($colors, reddark);
+  }
+}
+
+span .red {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 20px;
+  animation: red-ani;
+  animation-duration: 3s;
+}
+
+@keyframes red-ani {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 20%;
+  }
+}
+
+.circle2 {
+  button {
+    border-radius: 100%;
+    border: 1px solid aqua;
+    background: map_get($colors,primary);
+    width: 80px;
+    height: 80px;
+    i {
+      color: white;
+    }
+  }
+}
+
+.grow2 {
+  h5 {
+    transition: all .25s ease-in-out;
+  }
+}
+
+.grow2:hover {
+  h5 {
+    color: map_get($colors,primary);
+  }
 }
