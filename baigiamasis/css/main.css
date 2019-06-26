@@ -54,20 +54,10 @@
   .circle span {
     position: relative; }
 
-#bar1 {
-  width: 0; }
-
-#bar2 {
-  width: 0; }
-
-#bar3 {
-  width: 0; }
-
-#bar4 {
-  width: 0; }
-
-#bar5 {
-  width: 0; }
+.progress-bar {
+  transition: 3s;
+  width: 0;
+  position: relative; }
 
 .nav-item a {
   padding: 6px 25px; }
@@ -137,6 +127,60 @@
 
 .text {
   text-align: right; }
+  .text a {
+    border-radius: 50%;
+    border: #eaebed solid 1px;
+    background: white;
+    padding: 4px; }
+    .text a i {
+      width: 20px;
+      height: 20px;
+      text-align: center; }
 
 .text2 {
   text-align: left; }
+  .text2 a {
+    border-radius: 50%;
+    border: #eaebed solid 1px;
+    background: white;
+    padding: 4px; }
+    .text2 a i {
+      width: 20px;
+      height: 20px;
+      text-align: center; }
+
+.red span {
+  background: #e74c3c;
+  color: white; }
+
+.red a {
+  background: #cf2c1d; }
+
+span .red {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 20px;
+  animation: red-ani;
+  animation-duration: 3s; }
+
+@keyframes red-ani {
+  0% {
+    left: -50px; }
+  100% {
+    left: 20%; } }
+
+.circle2 button {
+  border-radius: 100%;
+  border: 1px solid aqua;
+  background: #1ccdca;
+  width: 80px;
+  height: 80px; }
+  .circle2 button i {
+    color: white; }
+
+.grow2 h5 {
+  transition: all .25s ease-in-out; }
+
+.grow2:hover h5 {
+  color: #1ccdca; }
