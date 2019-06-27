@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/baigiamasis.css">
 </head>
 <body>
-<div class="container-fluid bg-light" id="top_head">
+<!--Begin Top Section-->
+<section class="container-fluid bg-light" id="top_head">
     <div class="container">
         <div class="row">
             <div class="col-7">
@@ -92,7 +93,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
+<!--End Top Section-->
+<!--Begin Header-->
 <header class="sticky-top">
     <div class="container">
         <nav class="row">
@@ -154,6 +157,8 @@
         </nav>
     </div>
 </header>
+<!--End Header-->
+<!--Begin Carousel-->
 <section class="container-fluid">
     <div class="row">
         <div class="col-md-12 px-0">
@@ -168,8 +173,9 @@
                         <img class="d-block w-100" src="css/img/slide1.jpg" alt="First slide">
                         <div class="red">
                             <div class="p-2">
-                                <span>Enar Theme IS The Best</span>
-                                <a class="px-2">
+                                <h5>Enar Theme IS The Best
+                                </h5>
+                                <a>
                                     <span>
                                         <i class="fas fa-chevron-right fa-xs"></i>
                                     </span>
@@ -196,6 +202,7 @@
         </div>
     </div>
 </section>
+<!--End Carousel-->
 <section>
     <div class="container-fluid" id="slider">
         <div class="container">
@@ -214,6 +221,7 @@
         </div>
     </div>
 </section>
+<!--Begin Growing Icons-->
 <section class="container spacer">
     <div class="row">
         <div class="col-4 grow">
@@ -271,6 +279,7 @@
         </div>
     </div>
 </section>
+<!--End Growing Icons-->
 <!--Begin Progress Bars-->
 <section class="container-fluid" id="section_bg">
     <div class="row">
@@ -282,28 +291,51 @@
                     industry standar dummyy text ever since the when an iunesi known printer of took a galley of type.
                 </p>
             </div>
-            <div>
-
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-info" data-max="80" role="progressbar">
-                    <div></div>
+            <div id="progress_bars">
+                <div class="progress">
+                    <div class="progress-bar" id="bar1" data-percentage="80">
+                        <div class="title-container">WEB DESIGN</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-primary" data-max="60" role="progressbar">
+                <div class="progress">
+                    <div class="progress-bar" id="bar2" data-percentage="60">
+                        <div class="title-container">PROGRAMMING</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-info" data-max="70" role="progressbar">
+                <div class="progress">
+                    <div class="progress-bar" id="bar3" data-percentage="70">
+                        <div class="title-container">HTML/CSS</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-success" data-max="100" role="progressbar">
+                <div class="progress">
+                    <div class="progress-bar" id="bar4" data-percentage="100">
+                        <div class="title-container">WORDPRESS</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar bg-danger" data-max="40" role="progressbar">
+                <div class="progress">
+                    <div class="progress-bar" id="bar5" data-percentage="40">
+                        <div class="title-container">JOOMLA</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1197,7 +1229,8 @@
                                 </div>
                                 <div id="arrow">
                                     <a>
-                                        <button id="arw" class="video" data-video="https://www.youtube.com/embed/5_iuNaULT5k"
+                                        <button id="arw" class="video"
+                                                data-video="https://www.youtube.com/embed/5_iuNaULT5k"
                                                 data-toggle="modal" data-target="#videoModal">
                                             <i class="far fa-play-circle"></i>
                                         </button>
