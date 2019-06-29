@@ -27,7 +27,7 @@
                                     aria-haspopup="true" aria-expanded="false">
                                 ENGLISH
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu" id="z_index" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item zin" href="#">
                                     ENGLISH
                                     <i class="fas fa-check fa-sm"></i>
@@ -37,16 +37,16 @@
                         </div>
                     </div>
                     <div class="text-secondary col-10 px-0 my-auto">
-                    <span>
+                    <span class="p-2">
                         <i class="fas fa-key fa-sm"></i>
                         <a>LOGIN</a>
                     </span>
-                        <span>
+                        <span class="p-2">
                         <i class="fas fa-phone-alt fa-sm"></i>
                         <span>Call Us :</span>
                         (123) 456 - 7890
                     </span>
-                        <span>
+                        <span class="p-2">
                         <i class="fab fa-rocketchat fa-sm"></i>
                         <span>Support :</span>
                         (123) 456 - 7890
@@ -99,7 +99,7 @@
 <header class="sticky-top">
     <div class="container">
         <nav class="row">
-            <div class="col-12 px-0">
+            <div class="col-9 px-0 py-2">
                 <nav class="navbar navbar-expand-lg navbar-light px-0 py-0">
                     <div class="mr-5">
                         <a href="#">
@@ -108,51 +108,61 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            <li class="nav-item active px-2">
+                                <a class="nav-link p-0" href="#">HOME <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#" id="navbarDropdown" role="button"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     PAGES
                                 </a>
-                                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item text-light" href="#">Action</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-light" href="#">Another action</a>
+                                    <a class="dropdown-item text-light" href="#">Action 2</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item text-light" href="#">Something else here</a>
+                                    <a class="dropdown-item text-light" href="#">Action 3</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-light" href="#">Action 4</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-light" href="#">Action 5</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-light" href="#">Action 6</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">SLIDERS</a>
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#">SLIDERS</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">SHORTCODES</a>
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#">SHORTCODES</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#">PORTFOLIO</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">BLOG</a>
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#">BLOG</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">SHOP</a>
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#">SHOP</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#">TEAM</a>
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link p-0" href="#">TEAM</a>
                             </li>
                         </ul>
-                        <div class="form-group">
-                            <i class="fas fa-search"></i>
-                            <input type="search" name=search"" class="form-control" id="search"
-                                   placeholder="Search Here ...">
-                        </div>
-                        <button type="button">
-                            <i class="fas fa-cart-plus fa-xs text-secondary"></i>
-                        </button>
                     </div>
                 </nav>
+            </div>
+            <div class="col-md-2 my-auto py-2">
+                <div class="form-group my-auto">
+                    <i class="fas fa-search pl-2"></i>
+                    <input type="search" name=search"" class="form-control pl-5" id="search"
+                           placeholder="Search Here ...">
+                </div>
+            </div>
+            <div class="col-md-1 my-auto py-2">
+                <button id="shop_icon" type="button">
+                    <i class="fas fa-cart-plus fa-xs text-secondary"></i>
+                </button>
             </div>
         </nav>
     </div>
@@ -171,23 +181,78 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="css/img/slide1.jpg" alt="First slide">
-                        <div class="red">
-                            <div class="p-2">
-                                <h5>Enar Theme IS The Best
-                                </h5>
-                                <a>
-                                    <span>
+                        <div class="d-flex flex-column car_text">
+                            <div class="d-inline-flex red">
+                                <div class="d-flex justify-content-start">
+                                    <h5 class="mb-0">
+                                        Enar Theme IS The Best
+                                    </h5>
+                                    <button>
                                         <i class="fas fa-chevron-right fa-xs"></i>
-                                    </span>
-                                </a>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-inline-flex white">
+                                <h3 class="mb-0">
+                                    Fully Responsive Design
+                                </h3>
+                            </div>
+                            <div class="d-inline-flex transp">
+                                <h5 class="mb-0">
+                                    Lorem Ipsum is simply dummy text of the printing and industry
+                                </h5>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="css/img/slide2.jpg" alt="Second slide">
+                        <div class="d-flex flex-column car_text">
+                            <div class="d-inline-flex red">
+                                <div class="d-flex justify-content-start">
+                                    <h5 class="mb-0">
+                                        Enar Theme IS The Best
+                                    </h5>
+                                    <button>
+                                        <i class="fas fa-chevron-right fa-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-inline-flex white">
+                                <h3 class="mb-0">
+                                    Fully Responsive Design
+                                </h3>
+                            </div>
+                            <div class="d-inline-flex transp">
+                                <h5 class="mb-0">
+                                    Lorem Ipsum is simply dummy text of the printing and industry
+                                </h5>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img class="d-block w-100" src="css/img/slide3.jpg" alt="Third slide">
+                        <div class="d-flex flex-column car_text">
+                            <div class="d-inline-flex red">
+                                <div class="d-flex justify-content-start">
+                                    <h5 class="mb-0">
+                                        Enar Theme IS The Best
+                                    </h5>
+                                    <button>
+                                        <i class="fas fa-chevron-right fa-xs"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-inline-flex white">
+                                <h3 class="mb-0">
+                                    Fully Responsive Design
+                                </h3>
+                            </div>
+                            <div class="d-inline-flex transp">
+                                <h5 class="mb-0">
+                                    Lorem Ipsum is simply dummy text of the printing and industry
+                                </h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -586,53 +651,53 @@
 </section>
 <!--End Tabs and Accordion-->
 <!--Begin Running Numbers-->
-<section class="container-fluid">
+<section class="container-fluid" id="#running_numbers">
     <div class="container spacer">
-        <div class="row">
-            <div class="col-md-3 px-0">
-                <div class="color">
-                    <i class="far fa-user fa-2x"></i>
-                </div>
-                <div class="my-4">
-                    <h4 class="value" data-speed="4000" data-from="0" data-to="1500">0</h4>
-                </div>
-                <div>
-                    <h4 class="text-secondary">Clients</h4>
+        <div id="running_numbers" class="row">
+            <div class="col-md-3">
+                <div class="running-number lift-up">
+                    <div class="color">
+                        <i class="far fa-user fa-2x"></i>
+                    </div>
+                    <br>
+                    <span class="number-to-run" data-max="1500" data-increment="10">0</span>
+                    <br>
+                    <h4>Clients</h4>
                 </div>
             </div>
-            <div class="col-md-3 px-0">
-                <div class="color">
-                    <i class="far fa-heart fa-2x"></i>
-                </div>
-                <h4 class="my-4">
-                    <span class="value" data-speed="4000" data-from="0" data-to="13">0</span>
-                </h4>
-                <div class="text-secondary">
+            <div class="col-md-3">
+                <div class="running-number lift-up">
+                    <div class="color">
+                        <i class="far fa-heart fa-2x"></i>
+                    </div>
+                    <br>
+                    <span class="number-to-run" data-max="13" data-increment="1">0</span>
+                    <br>
                     <h4>Awards</h4>
                 </div>
             </div>
-            <div class="col-md-3 px-0">
-                <div class="color">
-                    <i class="fas fa-chevron-left fa-lg"></i>
-                    <span id="slash">/</span>
-                    <i class="fas fa-chevron-right fa-lg"></i>
-                </div>
-                <h4 class="my-4">
-                    <span class="value" data-speed="4000" data-from="0" data-to="94771">0</span>
-                </h4>
-                <div>
-                    <h4 class="text-secondary">Line Of Code</h4>
+            <div class="col-md-3">
+                <div class="running-number lift-up">
+                    <div class="color">
+                        <i class="fas fa-chevron-left fa-lg"></i>
+                        <span id="slash">/</span>
+                        <i class="fas fa-chevron-right fa-lg"></i>
+                    </div>
+                    <br>
+                    <span class="number-to-run" data-max="94771" data-increment="801">0</span>
+                    <br>
+                    <h4>Line Of Code</h4>
                 </div>
             </div>
-            <div class="col-md-3 px-0">
-                <div class="color">
-                    <i class="far fa-paper-plane fa-2x"></i>
-                </div>
-                <h4 class="my-4">
-                    <span class="value" data-speed="4000" data-from="0" data-to="384">0</span>
-                </h4>
-                <div>
-                    <h4 class="text-secondary">Projects</h4>
+            <div class="col-md-3">
+                <div class="running-number lift-up">
+                    <div class="color">
+                        <i class="far fa-paper-plane fa-2x"></i>
+                    </div>
+                    <br>
+                    <span class="number-to-run" data-max="384" data-increment="8">0</span>
+                    <br>
+                    <h4>Line Of Code</h4>
                 </div>
             </div>
         </div>
@@ -892,7 +957,7 @@
             </div>
         </div>
         <div class="col-md-6 pic">
-            <img src="css/img/looking1.jpg">
+            <img class="img-fluid" src="css/img/looking1.jpg">
         </div>
     </div>
 </section>
@@ -924,7 +989,7 @@
             </h4>
         </div>
         <div>
-            <form>
+            <form id="main">
                 <div class="row">
                     <div class="col-md-2 my-3 px-0">
                         <label for="name" class="mx-3"> Name <span class="text-danger">*</span></label>
@@ -987,7 +1052,8 @@
         </div>
     </div>
 </section>
-<footer class="container-fluid spacer bg-dark text-secondary">
+<!--Begin Footer-->
+<footer class="container-fluid spacer text-secondary">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
@@ -1099,34 +1165,34 @@
             </div>
             <div class="col-md-3">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="cloud_tags">
                         <h6 class="py-2 text-white">CLOUD TAGS</h6>
                         <a href="#">
-                            <button>Wordpress</button>
+                            <button class="mb-1">Wordpress</button>
                         </a>
                         <a href="#">
-                            <button>Creative</button>
+                            <button class="mb-1">Creative</button>
                         </a>
                         <a href="#">
-                            <button>CSS3</button>
+                            <button class="mb-1">CSS3</button>
                         </a>
                         <a href="#">
-                            <button>Design</button>
+                            <button class="mb-1">Design</button>
                         </a>
                         <a href="#">
-                            <button>Graphic</button>
+                            <button class="mb-1">Graphic</button>
                         </a>
                         <a href="#">
-                            <button>HTML5</button>
+                            <button class="mb-1">HTML5</button>
                         </a>
                         <a href="#">
-                            <button>SEO</button>
+                            <button class="mb-1">SEO</button>
                         </a>
                         <a href="#">
-                            <button>CSS3</button>
+                            <button class="mb-1">CSS3</button>
                         </a>
                         <a href="#">
-                            <button>Web Design</button>
+                            <button class="mb-1">Web Design</button>
                         </a>
                     </div>
                 </div>
@@ -1222,19 +1288,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div>
-                            <div id="video">
-                                <img class="img-fluid" src="css/img/videopic.jpg">
-                                <div id="play">
-                                    <div id="arrow">
-                                        <a>
-                                            <button id="arw" class="video"
-                                                    data-video="https://www.youtube.com/embed/5_iuNaULT5k"
-                                                    data-toggle="modal" data-target="#videoModal">
-                                                <i class="far fa-play-circle"></i>
-                                            </button>
-                                        </a>
-                                    </div>
+                        <div id="video">
+                            <img class="img-fluid" src="css/img/videopic.jpg">
+                            <div id="play">
+                                <div id="arrow">
+                                    <a>
+                                        <button id="arw" class="video"
+                                                data-video="https://www.youtube.com/embed/5_iuNaULT5k"
+                                                data-toggle="modal" data-target="#videoModal">
+                                            <i class="far fa-play-circle"></i>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1253,9 +1317,9 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span></button>
-                            <iframe width="100%" height="350" src="" frameborder="0"
-                                    allowfullscreen></iframe>
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>

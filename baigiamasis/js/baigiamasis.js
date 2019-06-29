@@ -1,28 +1,4 @@
 "use strict";
-
-// function barrFill() {
-//     var elem1 = document.getElementsByClassName('progress-bar');
-//     for (var i = 0; i < elem1.length; i++) {
-//         var elm = elem1[i];
-//         elm.getElementsByClassName('cloud');
-//         elm.style.width = parseFloat(elm.getAttribute('data-max')) + "%"
-//     }
-// }
-//
-// barrFill();
-//
-// var width = 1;
-// var id = setInterval(frame, 80);
-// function frame() {
-//     if (width >= 80) {
-//         clearInterval(id);
-//     } else {
-//         width++;
-//         elem1.style.width = width + '%';
-//         elem1.innerHTML = width * 1  + '%';
-//     }
-// }
-
 $(function () {
     $(".video").click(function () {
         var theModal = $(this).data("target"),
@@ -59,7 +35,6 @@ $(function() {
             scrollActions.runningNumbers = true;
         }
     });
-
     function startProgressBarsAnimation() {
         var elements = document.getElementsByClassName('progress-bar');
         for (var i = 0; i < elements.length; i++) {
@@ -97,5 +72,41 @@ $(function() {
             }
             counter++;
         }, 30);
+    }
+
+    function startRunningNumbersAnimation() {
+
+        var arr = document.getElementsByClassName('running-number');
+
+        var increment = 0;
+        for (var i = 0; i < arr.length; i++) {
+            var elm = arr[i];
+            slideDown(elm, increment);
+
+            // Run the numbers
+            runTheNumbers(elm.getElementsByClassName("number-to-run")[0]);
+
+            increment += 500;
+        }
+    }
+
+    function runTheNumbers(elm) {
+        var increment = parseInt(elm.getAttribute('data-increment'));
+        var counter = 0;
+        var interval = setInterval(function() {
+            elm.innerHTML = counter;
+
+            if (counter >= parseInt(elm.getAttribute('data-max'))) {
+                stop(interval);
+            }
+            counter += increment;
+        }, 30);
+    }
+
+    function slideDown(elm, increment) {
+        setTimeout(function() {
+            elm.classList.remove("lift-up");
+        }, increment);
+
     }
 });
