@@ -13,22 +13,22 @@
 <body>
 <!--Begin Top Section-->
 <section class="container-fluid bg-light" id="top_head">
-    <div class="container">
+    <div class="container p-1">
         <div class="row">
-            <div class="col-7">
+            <div class="col-9">
                 <div class="row">
-                    <div class="col-2 px-0">
+                    <div class="col-2">
                         <div class="dropdown">
                             <span>
                                 <i class="text-secondary fas fa-globe-americas fa-sm"></i>
                             </span>
-                            <button class="btn dropdown text-secondary" type="button" id="dropdownMenuButton"
+                            <button class="btn dropdown text-secondary p-0" type="button" id="dropdownMenuButton"
                                     data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
                                 ENGLISH
                             </button>
-                            <div class="dropdown-menu" id="z_index" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item zin" href="#">
+                            <div class="dropdown-menu p-0" id="language" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item check" href="#">
                                     ENGLISH
                                     <i class="fas fa-check fa-sm"></i>
                                 </a>
@@ -36,59 +36,78 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-secondary col-10 px-0 my-auto">
-                    <span class="p-2">
-                        <i class="fas fa-key fa-sm"></i>
-                        <a>LOGIN</a>
-                    </span>
+                    <div class="text-secondary col-2 p-0 my-auto">
                         <span class="p-2">
-                        <i class="fas fa-phone-alt fa-sm"></i>
-                        <span>Call Us :</span>
-                        (123) 456 - 7890
+                            <i class="fas fa-key fa-sm"></i>
+                            <span>LOGIN</span>
                     </span>
+                    </div>
+                    <div class="text-secondary col-8 px-0 my-auto">
                         <span class="p-2">
-                        <i class="fab fa-rocketchat fa-sm"></i>
-                        <span>Support :</span>
-                        (123) 456 - 7890
-                    </span>
+                            <span>
+                                <i class="fas fa-phone-volume fa-sm"></i>
+                            </span>
+                            <span>Call Us : (123) 456 - 7890</span>
+                        </span>
+                        <span class="p-2">
+                            <span>
+                                <i class="fab fa-rocketchat fa-sm"></i>
+                            </span>
+                            <span>Support : (123) 456 - 7890</span>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div class="text-secondary col-5 px-0 my-auto">
-                <div>
-                    <div>
-                        <a href="#" target="_blank" class="text-secondary">
-                            <span>Facebook</span>
-                            <span></span>
+            <div class="text-secondary text-right col-3 px-0 my-auto">
+                <div class="smal-icons">
+                    <a href="#" target="_blank" class="text-secondary p-2">
+                        <span>
                             <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="text-secondary">
-                            <span>Twitter</span>
-                            <span></span>
+                        </span>
+                        <div class="hover py-1 px-2">
+                            Facebook
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="text-secondary p-2">
+                        <span>
                             <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" target="_blank" class="text-secondary">
-                            <span>Google</span>
-                            <span></span>
+                        </span>
+                        <div class="hover py-1 px-2">
+                            Twitter
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="text-secondary p-2">
+                        <span>
                             <i class="fab fa-google"></i>
-                        </a>
-                        <a href="#" target="_blank" class="text-secondary">
-                            <span>Skype</span>
-                            <span></span>
+                        </span>
+                        <div class="hover py-1 px-2">
+                            Google+
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="text-secondary p-2">
+                        <span>
                             <i class="fab fa-skype"></i>
-                        </a>
-                        <a href="#" target="_blank" class="text-secondary">
-                            <span>Wordpress</span>
-                            <span></span>
+                        </span>
+                        <div class="hover-left py-1 px-2">
+                            Skype
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="text-secondary p-2">
+                        <span>
                             <i class="fab fa-wordpress"></i>
-                        </a>
-
-                        <a href="#" target="_blank" class="text-secondary">
-                            <span>Vimeo</span>
-                            <span></span>
+                        </span>
+                        <div class="hover-left py-1 px-2">
+                            Wordpress
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="text-secondary p-2">
+                        <span>
                             <i class="fab fa-vimeo-v"></i>
-                        </a>
-                    </div>
+                        </span>
+                        <div class="hover-left py-1 px-2">
+                            Vimeo
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -159,7 +178,7 @@
                            placeholder="Search Here ...">
                 </div>
             </div>
-            <div class="col-md-1 my-auto py-2">
+            <div class="col-md-1 text-right my-auto px-0 py-2">
                 <button id="shop_icon" type="button">
                     <i class="fas fa-cart-plus fa-xs text-secondary"></i>
                 </button>
@@ -412,13 +431,13 @@
     <div class="container px-0">
         <div class="row">
             <div class="col-md-6">
-                <div class="main_title upper small">
-                    <h3>
-                    <span class="line">
-                    <span class="dot"></span>
-                    </span>
-                        Why Choose Us?
-                    </h3>
+                <div class="main_title upper small hover-line">
+                    <h3>Why Choose Us?</h3>
+                    <div class="position-relative pt-3 pb-5">
+                        <span class="smal-circle"></span>
+                        <span class="top-line"></span>
+                        <span class="bot-line"></span>
+                    </div>
                 </div>
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
@@ -526,12 +545,12 @@
             </div>
             <div class="col-6">
                 <div class="main_title upper small">
-                    <h3>
-                    <span class="line">
-                        <span class="dot"></span>
-                    </span>
-                        Why Work With Us?
-                    </h3>
+                    <h3>Why Work With Us?</h3>
+                    <div class="position-relative pt-3 pb-5">
+                        <span class="smal-circle"></span>
+                        <span class="top-line"></span>
+                        <span class="bot-line"></span>
+                    </div>
                 </div>
                 <div id="accordion">
                     <div class="card">
@@ -709,8 +728,17 @@
     <div class="container spacer">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h2>MEET OUR TEAM</h2>
-                <h5 class="text-secondary">We believe in a diverse range of personnel to bring creative skills,
+                <div class="hover-double-line pb-2">
+                    <h2>MEET OUR TEAM</h2>
+                    <div class="position-relative pt-3 pb-4 px-0">
+                        <span class="main-line"></span>
+                        <span class="main-line-bot"></span>
+                        <span class="awesome">
+                        <i class="far fa-user fa-lg"></i>
+                    </span>
+                    </div>
+                </div>
+                <h5 class="text-secondary py-2">We believe in a diverse range of personnel to bring creative skills,
                     thoughts,
                     and ideas to the table.</h5>
             </div>
@@ -748,12 +776,16 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5 team-photo"><img src="css/img/team1-large.jpg"></div>
+                                            <div class="col-md-5 team-photo">
+                                                <img src="css/img/team1-large.jpg">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="row">
-                                            <div class="col-md-5 team-photo"><img src="css/img/team2-medium.jpg"></div>
+                                            <div class="col-md-5 team-photo pl-5">
+                                                <img src="css/img/team2-medium.jpg">
+                                            </div>
                                             <div class="col-md-7 text2"><h5> NIX MAXWELL </h5>
                                                 <span class="text-secondary">Manager</span>
                                                 <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
@@ -802,12 +834,16 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-5 team-photo"><img src="css/img/team3-large.jpg"></div>
+                                            <div class="col-md-5 team-photo">
+                                                <img src="css/img/team3-large.jpg">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="row">
-                                            <div class="col-md-5 team-photo"><img src="css/img/team4-large.jpg"></div>
+                                            <div class="col-md-5 team-photo pl-5">
+                                                <img src="css/img/team4-large.jpg">
+                                            </div>
                                             <div class="col-md-7 text2"><h5>John Doe</h5>
                                                 <span class="text-secondary">Web Designer</span>
                                                 <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
@@ -857,12 +893,16 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <div class="col-md-5 team-photo"><img src="css/img/team5-large.jpg"></div>
+                                        <div class="col-md-5 team-photo">
+                                            <img src="css/img/team5-large.jpg">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-5 team-photo"><img src="css/img/team6-large.jpg"></div>
+                                        <div class="col-md-5 team-photo pl-5">
+                                            <img src="css/img/team6-large.jpg">
+                                        </div>
                                         <div class="col-md-7 text2"><h5>John Smith</h5>
                                             <span class="text-secondary">Programmer & SEO</span>
                                             <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
@@ -893,10 +933,18 @@
     </div>
 </section>
 <!--End Carousel-->
+<!--Begins Big Img-->
 <section class="container spacer">
     <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center hover-double-line">
             <h2>Our Services</h2>
+            <div class="pb-2">
+                <div class="position-relative pt-3 pb-4 px-0">
+                    <span class="main-line"></span>
+                    <span class="main-line-bot"></span>
+                    <span class="small-circle-center"></span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -961,22 +1009,45 @@
         </div>
     </div>
 </section>
-<section class="container px-0 spacer">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2>
-                PRICING <span class="text3">PLANS</span>
-            </h2>
+<!--End Big img -->
+<!--Begin Pricing Plans-->
+<section class="container-fluid spacer px-0">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-12 text-center hover-double-line">
+                <h2>
+                    PRICING <span class="text3">PLANS</span>
+                </h2>
+                <div class="pb-2">
+                    <div class="position-relative pt-3 pb-5 px-0">
+                        <span class="main-line"></span>
+                        <span class="main-line-bot"></span>
+                        <span class="awesome">
+                     <i class="fas fa-wallet fa-lg"></i>
+                    </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="plans_section" class="container py-5 mx-auto row">
+        <!--FILLED BY JS-->
+    </div>
 </section>
+<!--End Pricing Plans-->
+<!--Begin Form-->
 <section class="container-fluid spacer borders bg-light">
     <div class="container px-0" id="form">
         <div class="row text-center">
-            <div class="col-md-12">
-                <h2>
-                    Contact us
-                </h2>
+            <div class="col-md-12 hover-double-line">
+                <h2>Contact us</h2>
+                <div class="pb-2">
+                    <div class="position-relative pt-3 pb-4 px-0">
+                        <span class="main-line"></span>
+                        <span class="main-line-bot"></span>
+                        <span class="small-circle-center"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="">
@@ -1036,6 +1107,7 @@
         </div>
     </div>
 </section>
+<!--End Form-->
 <section class="container-fluid" id="map_text">
     <div class="row text-center py-4">
         <div class="col-md-12">
@@ -1323,6 +1395,36 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid py-4" id="last_section">
+    <div class="container px-0">
+        <div class="row">
+            <div class="col-md-12 py-auto">
+                <p class="float-left text-center text-secondary m-0">
+                    Copyright © 2015 Powered By <a href="#" class="highlight">Ideal Theme</a> -
+                    <a href="#" class="highlight">Ideal Engine</a>
+                    - All Rights Reserved
+                </p>
+                <ul class=" float-right text-center text-secondary m-0">
+                    <li class="list-inline-item">
+                        <a href="#">Home</a>
+                        <span class="pl-1">/</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">About Us</a>
+                        <span class="pl-1">/</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Help Center</a>
+                        <span class="pl-1">/</span>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

@@ -12,8 +12,16 @@ $colors: (
         slidertext: #aaa,
         headericon: #777777,
         borders: #eaebed,
+        border: #e4e4e4,
         maps: #684962,
 );
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .sticky-top {
   background: white;
 }
@@ -653,11 +661,20 @@ form#main {
 }
 
 footer {
-  background: map_get($colors, progresbarsecondary);
+  background: map_get($colors, progresbarbg);
 }
 
-#z_index {
+#language {
   z-index: 1050 !important;
+  background: map_get($colors, primary);
+
+  .check {
+    background: map_get($colors, secondary);
+  }
+
+  .dropdown-item:hover {
+    background: map_get($colors, secondary);
+  }
 }
 
 .form-group {
@@ -680,10 +697,344 @@ footer {
   outline: none;
 }
 
-.dropdown-menu {
-  background: map_get($colors, progresbarsecondary);
-
-  a:hover {
+.nav-item {
+  .dropdown-menu {
     background: map_get($colors, progresbarsecondary);
+
+    a:hover {
+      background: map_get($colors, progresbarsecondary);
+    }
   }
 }
+
+.smal-icons {
+  a {
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+
+    span {
+    }
+
+    div.hover {
+      color: white;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+      height: 100%;
+    }
+
+    div.hover-left {
+      color: white;
+      position: absolute;
+      right: 100%;
+      top: 0;
+      display: none;
+      height: 100%;
+    }
+  }
+
+  a:hover {
+    background: map_get($colors, secondary);
+
+    div.hover {
+      background: map_get($colors, primary);
+      display: inline-block;
+      z-index: 9999;
+      animation: right-move;
+    }
+
+    div.hover-left {
+      background: map_get($colors, primary);
+      display: inline-block;
+      z-index: 9999;
+      animation: left-move;
+    }
+  }
+}
+
+@keyframes right-move {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+//Begin Hexagon
+.hexagon-container {
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  margin: 28.87px 0;
+  background-color: white;
+  border-left: solid 2px map_get($colors, primary);
+  border-right: solid 2px map_get($colors, primary);
+
+  .hexagon-content {
+    position: relative;
+    top: 5%;
+    color: map_get($colors, primary);
+    z-index: 3;
+
+    .price {
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+
+    .periodicity {
+      font-size: 14px;
+    }
+  }
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 12.6447px;
+}
+
+.hexagon:before {
+  top: -35.3553px;
+  border-top: solid 2.8284px map_get($colors, primary);
+  border-right: solid 2.8284px map_get($colors, primary);
+}
+
+.hexagon:after {
+  bottom: -35.3553px;
+  border-bottom: solid 2.8284px map_get($colors, primary);
+  border-left: solid 2.8284px map_get($colors, primary);
+}
+
+//End Hexagon
+//Begin Plans
+.plan-table {
+  &:hover {
+    .plan-header {
+      background-color: map_get($colors, primary);
+      color: white;
+      transition-delay: 0s, 0.5s;
+    }
+  }
+
+  tbody tr td {
+    padding: 10px;
+    font-size: 14px;
+    color: map_get($colors, headericon);
+  }
+
+  &.table-bordered {
+    thead {
+      th {
+        border-bottom-width: 1px;
+      }
+    }
+  }
+
+  border: map_get($colors, border);
+  width: 100%;
+
+  .plan-header {
+    &.active {
+      background-color: map_get($colors, primary);
+      color: white;
+    }
+
+    height: 150px;
+    color: map_get($colors, primary);
+    transition-duration: 0.6s;
+    transition-property: background-color, color;
+    transition-delay: 0.5s, 0s;
+
+    .plan-name {
+      margin-top: 105px;
+    }
+  }
+}
+
+.btn-plan {
+  background: white;
+  color: map_get($colors, headericon);
+  border-radius: 20px;
+  border: 2px solid #ECE8E7;
+  transition: 0.6s;
+
+  &:hover {
+    background: #576162;
+    color: white;
+    transition: 0.6s;
+    border: 2px solid #576162;
+  }
+}
+
+//End Plans
+.container-fluid#last_section {
+  background: map_get($colors, progresbarsecondary);
+
+  p {
+    a {
+      color: map_get($colors, primary);
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    a {
+      transition: 0.5s;
+      color: map_get($colors, headericon);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: map_get($colors, primary);
+    }
+  }
+}
+
+.nav-tabs {
+  .nav-item {
+    border-right: map_get($colors, headericon) !important;
+    border-left: map_get($colors, headericon) !important;
+    border-top: map_get($colors, headericon) !important;
+
+    .nav-link {
+      border-top: 4px solid transparent;
+
+      &.active {
+        border-top-color: map_get($colors, primary) !important;
+        color: map_get($colors, primary) !important;
+      }
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+//Start Basic Line
+.position-relative {
+  width: 100%;
+
+  .small-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    border: map_get($colors, primary) solid 1px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .top-line {
+    background: map_get($colors, primary);
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .bot-line {
+    background: map_get($colors, borders);
+    width: 33%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.hover-line:hover {
+  .top-line {
+    width: 150px;
+    height: 1px;
+    position: absolute;
+  }
+}
+
+//End Basic Line
+//Start Double Line
+.position-relative {
+  width: 100%;
+  .main-line {
+    background: map_get($colors, primary);
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main-line-bot {
+    background: map_get($colors, borders);
+    width: 33%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  span {
+    i {
+      padding: 5px;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      color: map_get($colors,primary);
+      background: white;
+    }
+  }
+  .small-circle-center {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    border: map_get($colors, primary) solid 1px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.hover-double-line:hover {
+  .main-line {
+    width: 200px;
+    height: 1px;
+    position: absolute;
+  }
+}
+//End Double Line

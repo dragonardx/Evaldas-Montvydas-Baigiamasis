@@ -1,3 +1,9 @@
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .sticky-top {
   background: white; }
 
@@ -462,10 +468,15 @@ form#main textarea {
   color: white; }
 
 footer {
-  background: #14181b; }
+  background: #3c464d; }
 
-#z_index {
-  z-index: 1050 !important; }
+#language {
+  z-index: 1050 !important;
+  background: #1ccdca; }
+  #language .check {
+    background: #19b8b5; }
+  #language .dropdown-item:hover {
+    background: #19b8b5; }
 
 .form-group {
   position: relative; }
@@ -484,7 +495,240 @@ footer {
   border: #eaebed solid 1px;
   outline: none; }
 
-.dropdown-menu {
+.nav-item .dropdown-menu {
   background: #14181b; }
-  .dropdown-menu a:hover {
+  .nav-item .dropdown-menu a:hover {
     background: #14181b; }
+
+.smal-icons a {
+  transition: 0.5s;
+  position: relative;
+  text-decoration: none; }
+  .smal-icons a div.hover {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 100%; }
+  .smal-icons a div.hover-left {
+    color: white;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    display: none;
+    height: 100%; }
+
+.smal-icons a:hover {
+  background: #19b8b5; }
+  .smal-icons a:hover div.hover {
+    background: #1ccdca;
+    display: inline-block;
+    z-index: 9999;
+    animation: right-move; }
+  .smal-icons a:hover div.hover-left {
+    background: #1ccdca;
+    display: inline-block;
+    z-index: 9999;
+    animation: left-move; }
+
+@keyframes right-move {
+  from {
+    transform: translateX(0);
+    opacity: 0; }
+  to {
+    transform: translateX(100%);
+    opacity: 1; } }
+
+.hexagon-container {
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; }
+
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 57.74px;
+  margin: 28.87px 0;
+  background-color: white;
+  border-left: solid 2px #1ccdca;
+  border-right: solid 2px #1ccdca; }
+  .hexagon .hexagon-content {
+    position: relative;
+    top: 5%;
+    color: #1ccdca;
+    z-index: 3; }
+    .hexagon .hexagon-content .price {
+      font-size: 25px;
+      margin-bottom: 0; }
+    .hexagon .hexagon-content .periodicity {
+      font-size: 14px; }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 70.71px;
+  height: 70.71px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 12.6447px; }
+
+.hexagon:before {
+  top: -35.3553px;
+  border-top: solid 2.8284px #1ccdca;
+  border-right: solid 2.8284px #1ccdca; }
+
+.hexagon:after {
+  bottom: -35.3553px;
+  border-bottom: solid 2.8284px #1ccdca;
+  border-left: solid 2.8284px #1ccdca; }
+
+.plan-table {
+  border: #e4e4e4;
+  width: 100%; }
+  .plan-table:hover .plan-header {
+    background-color: #1ccdca;
+    color: white;
+    transition-delay: 0s, 0.5s; }
+  .plan-table tbody tr td {
+    padding: 10px;
+    font-size: 14px;
+    color: #777777; }
+  .plan-table.table-bordered thead th {
+    border-bottom-width: 1px; }
+  .plan-table .plan-header {
+    height: 150px;
+    color: #1ccdca;
+    transition-duration: 0.6s;
+    transition-property: background-color, color;
+    transition-delay: 0.5s, 0s; }
+    .plan-table .plan-header.active {
+      background-color: #1ccdca;
+      color: white; }
+    .plan-table .plan-header .plan-name {
+      margin-top: 105px; }
+
+.btn-plan {
+  background: white;
+  color: #777777;
+  border-radius: 20px;
+  border: 2px solid #ECE8E7;
+  transition: 0.6s; }
+  .btn-plan:hover {
+    background: #576162;
+    color: white;
+    transition: 0.6s;
+    border: 2px solid #576162; }
+
+.container-fluid#last_section {
+  background: #14181b; }
+  .container-fluid#last_section p a {
+    color: #1ccdca;
+    text-decoration: none; }
+  .container-fluid#last_section ul a {
+    transition: 0.5s;
+    color: #777777;
+    text-decoration: none; }
+  .container-fluid#last_section ul a:hover {
+    color: #1ccdca; }
+
+.nav-tabs .nav-item {
+  border-right: #777777 !important;
+  border-left: #777777 !important;
+  border-top: #777777 !important; }
+  .nav-tabs .nav-item .nav-link {
+    border-top: 4px solid transparent; }
+    .nav-tabs .nav-item .nav-link.active {
+      border-top-color: #1ccdca !important;
+      color: #1ccdca !important; }
+    .nav-tabs .nav-item .nav-link:hover {
+      border-color: transparent; }
+
+.position-relative {
+  width: 100%; }
+  .position-relative .small-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    border: #1ccdca solid 1px;
+    top: 50%;
+    transform: translateY(-50%); }
+  .position-relative .top-line {
+    background: #1ccdca;
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); }
+  .position-relative .bot-line {
+    background: #eaebed;
+    width: 33%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%); }
+
+.hover-line:hover .top-line {
+  width: 150px;
+  height: 1px;
+  position: absolute; }
+
+.position-relative {
+  width: 100%; }
+  .position-relative .main-line {
+    background: #1ccdca;
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .position-relative .main-line-bot {
+    background: #eaebed;
+    width: 33%;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .position-relative span i {
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #1ccdca;
+    background: white; }
+  .position-relative .small-circle-center {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    border: #1ccdca solid 1px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.hover-double-line:hover .main-line {
+  width: 200px;
+  height: 1px;
+  position: absolute; }
