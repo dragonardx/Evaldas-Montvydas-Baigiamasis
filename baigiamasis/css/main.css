@@ -87,9 +87,6 @@ body, html {
 .spacer {
   padding: 90px 0; }
 
-#slash {
-  font-size: 28px; }
-
 .borders {
   border-bottom: #eaebed solid 1px;
   border-top: #eaebed solid 1px; }
@@ -281,36 +278,42 @@ footer .smal-img {
 
 #img_div1 {
   background-image: url("../css/img/flicker1.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative; }
 
 #img_div2 {
   background-image: url("../css/img/flicker2.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative; }
 
 #img_div3 {
   background-image: url("../css/img/flicker3.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative; }
 
 #img_div4 {
   background-image: url("../css/img/flicker4.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative; }
 
 #img_div5 {
   background-image: url("../css/img/flicker5.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative; }
 
 #img_div6 {
   background-image: url("../css/img/flicker6.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative; }
@@ -488,12 +491,15 @@ footer {
   transform: translateY(-50%); }
 
 #shop_icon {
-  background: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: #eaebed solid 1px;
-  outline: none; }
+  max-width: 40px !important;
+  float: right; }
+  #shop_icon button {
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #eaebed solid 1px;
+    outline: none; }
 
 .nav-item .dropdown-menu {
   background: #14181b; }
@@ -507,7 +513,7 @@ footer {
   .smal-icons a div.hover {
     color: white;
     position: absolute;
-    left: 0;
+    left: 100%;
     top: 0;
     display: none;
     height: 100%; }
@@ -524,21 +530,11 @@ footer {
   .smal-icons a:hover div.hover {
     background: #1ccdca;
     display: inline-block;
-    z-index: 9999;
-    animation: right-move; }
+    z-index: 9999; }
   .smal-icons a:hover div.hover-left {
     background: #1ccdca;
     display: inline-block;
-    z-index: 9999;
-    animation: left-move; }
-
-@keyframes right-move {
-  from {
-    transform: translateX(0);
-    opacity: 0; }
-  to {
-    transform: translateX(100%);
-    opacity: 1; } }
+    z-index: 9999; }
 
 .hexagon-container {
   position: absolute;
@@ -732,3 +728,74 @@ footer {
   width: 200px;
   height: 1px;
   position: absolute; }
+
+.input-group-append button {
+  background: #1ccdca;
+  color: white; }
+
+#posts {
+  width: 100%; }
+  #posts a {
+    width: 100%; }
+    #posts a button {
+      width: 100%;
+      color: #1ccdca;
+      border: #1ccdca solid 2px;
+      background: black; }
+    #posts a .d-2 {
+      opacity: 0;
+      transition: 0.5s; }
+
+#posts:hover .d-1 {
+  opacity: 0;
+  transition: 0.5s; }
+
+#posts:hover span {
+  transition: 0.5s;
+  color: white; }
+
+#posts:hover .d-2 {
+  opacity: 1;
+  transition: 0.5s; }
+
+#read-more-button {
+  background: black;
+  border: none;
+  border-radius: 4px;
+  color: white; }
+
+#read-more-button:hover {
+  transition: 0.5s;
+  color: #1ccdca; }
+
+#cart button {
+  background: #1ccdca;
+  color: white;
+  width: 100%;
+  border-radius: 4px; }
+
+.icons-hover a {
+  text-decoration: none; }
+
+.icons-hover a:hover {
+  transition: 0.5s;
+  border: #1ccdca solid 1px; }
+
+.icons-hover-2 a {
+  text-decoration: none; }
+  .icons-hover-2 a i {
+    color: #777777; }
+  .icons-hover-2 a i:hover {
+    color: #1ccdca; }
+  .icons-hover-2 a h6:hover {
+    color: #1ccdca; }
+
+.list {
+  padding-left: 20px; }
+  .list li {
+    list-style: none; }
+    .list li span {
+      background: red;
+      border-radius: 50%; }
+      .list li span i {
+        color: white; }

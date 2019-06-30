@@ -142,10 +142,6 @@ body, html {
   padding: 90px 0;
 }
 
-#slash {
-  font-size: 28px;
-}
-
 .borders {
   border-bottom: map_get($colors, borders) solid 1px;
   border-top: map_get($colors, borders) solid 1px;
@@ -424,6 +420,7 @@ footer {
 
 #img_div1 {
   background-image: url("../css/img/flicker1.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative;
@@ -431,6 +428,7 @@ footer {
 
 #img_div2 {
   background-image: url("../css/img/flicker2.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative;
@@ -438,6 +436,7 @@ footer {
 
 #img_div3 {
   background-image: url("../css/img/flicker3.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative;
@@ -445,6 +444,7 @@ footer {
 
 #img_div4 {
   background-image: url("../css/img/flicker4.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative;
@@ -452,6 +452,7 @@ footer {
 
 #img_div5 {
   background-image: url("../css/img/flicker5.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative;
@@ -459,6 +460,7 @@ footer {
 
 #img_div6 {
   background-image: url("../css/img/flicker6.jpg");
+  background-size: cover;
   width: 80px;
   height: 80px;
   position: relative;
@@ -689,12 +691,16 @@ footer {
 }
 
 #shop_icon {
-  background: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: map_get($colors, borders) solid 1px;
-  outline: none;
+  max-width: 40px !important;
+  float: right;
+  button {
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: map_get($colors, borders) solid 1px;
+    outline: none;
+  }
 }
 
 .nav-item {
@@ -719,7 +725,7 @@ footer {
     div.hover {
       color: white;
       position: absolute;
-      left: 0;
+      left: 100%;
       top: 0;
       display: none;
       height: 100%;
@@ -734,7 +740,6 @@ footer {
       height: 100%;
     }
   }
-
   a:hover {
     background: map_get($colors, secondary);
 
@@ -742,26 +747,13 @@ footer {
       background: map_get($colors, primary);
       display: inline-block;
       z-index: 9999;
-      animation: right-move;
     }
 
     div.hover-left {
       background: map_get($colors, primary);
       display: inline-block;
       z-index: 9999;
-      animation: left-move;
     }
-  }
-}
-
-@keyframes right-move {
-  from {
-    transform: translateX(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(100%);
-    opacity: 1;
   }
 }
 
@@ -983,6 +975,7 @@ footer {
 //Start Double Line
 .position-relative {
   width: 100%;
+
   .main-line {
     background: map_get($colors, primary);
     width: 80px;
@@ -1005,6 +998,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   span {
     i {
       padding: 5px;
@@ -1013,10 +1007,11 @@ footer {
       z-index: 3;
       transform: translate(-50%, -50%);
       position: absolute;
-      color: map_get($colors,primary);
+      color: map_get($colors, primary);
       background: white;
     }
   }
+
   .small-circle-center {
     width: 10px;
     height: 10px;
@@ -1030,6 +1025,7 @@ footer {
     transform: translate(-50%, -50%);
   }
 }
+
 .hover-double-line:hover {
   .main-line {
     width: 200px;
@@ -1037,4 +1033,104 @@ footer {
     position: absolute;
   }
 }
+
 //End Double Line
+.input-group-append {
+  button {
+    background: map_get($colors, primary);
+    color: white;
+  }
+}
+
+#posts {
+  width: 100%;
+
+  a {
+    width: 100%;
+
+    button {
+      width: 100%;
+      color: map_get($colors, primary);
+      border: map_get($colors, primary) solid 2px;
+      background: black;
+    }
+
+    .d-2 {
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
+}
+
+#posts:hover {
+  .d-1 {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  span {
+    transition: 0.5s;
+    color: white;
+  }
+
+  .d-2 {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+#read-more-button {
+  background: black;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+#read-more-button:hover {
+  transition: 0.5s;
+  color: map_get($colors,primary);
+}
+#cart {
+  button {
+    background: map_get($colors,primary);
+    color: white;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+.icons-hover {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    transition: 0.5s;
+    border: map_get($colors,primary) solid 1px;
+  }
+
+}
+.icons-hover-2 {
+  a {
+    text-decoration: none;
+    i {
+      color: map_get($colors,headericon);
+    }
+    i:hover {
+      color: map_get($colors,primary);
+    }
+    h6:hover {
+      color: map_get($colors,primary);
+    }
+  }
+}
+.list {
+  padding-left: 20px;
+  li {
+    list-style: none;
+    span {
+      background: red;
+      border-radius: 50%;
+      i {
+        color: white;
+      }
+    }
+  }
+}

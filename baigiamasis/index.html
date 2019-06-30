@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/baigiamasis.css">
 </head>
 <body>
 <!--Begin Top Section-->
@@ -178,10 +177,27 @@
                            placeholder="Search Here ...">
                 </div>
             </div>
-            <div class="col-md-1 text-right my-auto px-0 py-2">
-                <button id="shop_icon" type="button">
-                    <i class="fas fa-cart-plus fa-xs text-secondary"></i>
-                </button>
+            <div class="col-md-1 mx-0 py-2 px-0">
+                <div class="dropdown" id="shop_icon">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cart-plus fa-xs text-secondary"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item">
+                            <p>Blue Round-Neck Tshirt</p>
+                            <img src="css/img/cart-1.png">
+                        </div>
+                        <div class="dropdown-item">
+                            <p>Light Blue Denim Dress</p>
+                            <img src="css/img/cart-2.png">
+                        </div>
+                        <div id="cart" class="dropdown-item">
+                            <button type="button">
+                                View Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
@@ -467,15 +483,55 @@
                         </div>
                         <div class="row">
                             <div class="col-6 px-0 text-secondary">
-                                <ul>
-                                    <li>Multiple Layout</li>
-                                    <li>Awesome Short Codes</li>
-                                    <li>Browser Compatibility</li>
-                                    <li>Easy to Edit Animations</li>
-                                    <li>Parallax Effect</li>
-                                    <li>Responsive Design</li>
-                                    <li>Many Home Page Versions</li>
-                                    <li>Many Blog Pages</li>
+                                <ul class="list">
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Multiple Layout</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Awesome Short Codes</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Browser Compatibility</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Easy to Edit Animations</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Parallax Effect</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Responsive Design</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Many Home Page Versions</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Many Blog Pages</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-6 px-0 grow overflow-hidden">
@@ -495,15 +551,55 @@
                         </div>
                         <div class="row">
                             <div class="col-6 px-0 text-secondary">
-                                <ul>
-                                    <li>Multiple Layout</li>
-                                    <li>Awesome Short Codes</li>
-                                    <li>Browser Compatibility</li>
-                                    <li>Easy to Edit Animations</li>
-                                    <li>Parallax Effect</li>
-                                    <li>Responsive Design</li>
-                                    <li>Many Home Page Versions</li>
-                                    <li>Many Blog Pages</li>
+                                <ul class="list">
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Multiple Layout</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Awesome Short Codes</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Browser Compatibility</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Easy to Edit Animations</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Parallax Effect</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Responsive Design</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Many Home Page Versions</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Many Blog Pages</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-6 px-0 grow overflow-hidden">
@@ -523,15 +619,55 @@
                         </div>
                         <div class="row">
                             <div class="col-6 px-0 text-secondary">
-                                <ul>
-                                    <li>Multiple Layout</li>
-                                    <li>Awesome Short Codes</li>
-                                    <li>Browser Compatibility</li>
-                                    <li>Easy to Edit Animations</li>
-                                    <li>Parallax Effect</li>
-                                    <li>Responsive Design</li>
-                                    <li>Many Home Page Versions</li>
-                                    <li>Many Blog Pages</li>
+                                <ul class="list">
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Multiple Layout</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Awesome Short Codes</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Browser Compatibility</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Easy to Edit Animations</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Parallax Effect</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Responsive Design</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Many Home Page Versions</a>
+                                    </li>
+                                    <li>
+                                        <span>
+                                           <i class="fas fa-arrow-right"></i>
+                                        </span>
+                                        <a class="pl-2">Many Blog Pages</a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-6 px-0 grow overflow-hidden">
@@ -698,9 +834,7 @@
             <div class="col-md-3">
                 <div class="running-number lift-up">
                     <div class="color">
-                        <i class="fas fa-chevron-left fa-lg"></i>
-                        <span id="slash">/</span>
-                        <i class="fas fa-chevron-right fa-lg"></i>
+                        <i class="fas fa-code fa-2x"></i>
                     </div>
                     <br>
                     <span class="number-to-run" data-max="94771" data-increment="801">0</span>
@@ -714,9 +848,9 @@
                         <i class="far fa-paper-plane fa-2x"></i>
                     </div>
                     <br>
-                    <span class="number-to-run" data-max="384" data-increment="8">0</span>
+                    <span class="number-to-run" data-max="384" data-increment="4">0</span>
                     <br>
-                    <h4>Line Of Code</h4>
+                    <h4>Projects</h4>
                 </div>
             </div>
         </div>
@@ -761,7 +895,7 @@
                                                 <span class="text-secondary">CCO & Product manager</span>
                                                 <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
                                                     text of the printing and Lorem off typesetting industry. </p>
-                                                <div>
+                                                <div class="icons-hover">
                                                     <a href="#" class="mx-2">
                                                         <i class="fab fa-twitter fa-xs text-secondary"></i>
                                                     </a>
@@ -790,7 +924,7 @@
                                                 <span class="text-secondary">Manager</span>
                                                 <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
                                                     text of the printing and Lorem off typesetting industry. </p>
-                                                <div>
+                                                <div class="icons-hover">
                                                     <a href="#" class="mx-2">
                                                         <i class="fab fa-twitter fa-xs text-secondary"></i>
                                                     </a>
@@ -819,7 +953,7 @@
                                                 <span class="text-secondary">Photogropher</span>
                                                 <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
                                                     text of the printing and Lorem off typesetting industry. </p>
-                                                <div>
+                                                <div class="icons-hover">
                                                     <a href="#" class="mx-2">
                                                         <i class="fab fa-twitter fa-xs text-secondary"></i>
                                                     </a>
@@ -848,7 +982,7 @@
                                                 <span class="text-secondary">Web Designer</span>
                                                 <p class="text-secondary pt-3"> Lorem Ipsum is a simply dummie to
                                                     text of the printing and Lorem off typesetting industry. </p>
-                                                <div>
+                                                <div class="icons-hover">
                                                     <a href="#" class="mx-2">
                                                         <i class="fab fa-twitter fa-xs text-secondary"></i>
                                                     </a>
@@ -1136,11 +1270,11 @@
                         <h6 class="py-2">There are many Purchase Now There are many variations of passages of Lorem
                             Ipsum available, but the majority.</h6>
                         <a href="#">
-                            <button>
+                            <button class="p-2" id="read-more-button">
                                 <span>
-                                    <i></i>
+                                    <i class="fas fa-chevron-right fa-xs"></i>
                                 </span>
-                                Read More
+                                <span>Read More</span>
                             </button>
                         </a>
                     </div>
@@ -1172,7 +1306,7 @@
                                 </a>
                             </div>
                             <div class="col-md-7 pr-0">
-                                <a class="text-white" href="#">Best HTML5 Theme</a>
+                                <a class="text-white text-decoration-none" href="#">Best HTML5 Theme</a>
                                 <span>2015/01/23</span>
                                 <p>Tutorials, Videos</p>
                             </div>
@@ -1188,7 +1322,7 @@
                                 </a>
                             </div>
                             <div class="col-md-7 pr-0">
-                                <a class="text-white" href="#">Responseve Design</a>
+                                <a class="text-white text-decoration-none" href="#">Responseve Design</a>
                                 <span>2015/02/17</span>
                                 <p>Audio, Videos</p>
                             </div>
@@ -1204,7 +1338,7 @@
                                 </a>
                             </div>
                             <div class="col-md-7 pr-0">
-                                <a class="text-white" href="#">Many Home Pages</a>
+                                <a class="text-white text-decoration-none" href="#">Many Home Pages</a>
                                 <span>2015/02/17</span>
                                 <p>Tutorials, Design</p>
                             </div>
@@ -1220,17 +1354,19 @@
                                 </a>
                             </div>
                             <div class="col-md-7 pr-0">
-                                <a class="text-white" href="#">Best HTML5 Theme</a>
+                                <a class="text-white text-decoration-none" href="#">Best HTML5 Theme</a>
                                 <span>2015/01/23</span>
                                 <p>Tutorials, Videos</p>
                             </div>
-                            <a class="pl-3" href="#">
-                                <button>
-                                    <i class="fas fa-chevron-right"></i>
-                                    <span>Read More Posts</span>
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-                            </a>
+                            <div class="mr-3" id="posts">
+                                <a class="pl-3" href="#">
+                                    <button class="p-1">
+                                        <i class="fas fa-chevron-right pl-4 d-1"></i>
+                                        <span class="px-2">Read More Posts</span>
+                                        <i class="fas fa-chevron-right pr-4 d-2"></i>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1269,7 +1405,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12"><h6 class="text-light mt-3"> FLICKER WIDGET </h6>
+                    <div class="col-md-12 mt-3 py-3">
+                        <h6 class="text-light mt-3"> FLICKER WIDGET </h6>
                         <div class="row">
                             <div class="col-md-4 my-3">
                                 <div id="img_div1">
@@ -1324,17 +1461,17 @@
                     <div class="col-md-12 px-0">
                         <h6 class="text-light py-2 mb-3">BEST AUTHOR</h6>
                     </div>
-                    <div class="co-md-12 bg-white mt-3">
+                    <div class="co-md-12 bg-white mt-2">
                         <div class="row">
                             <div class="col-md-6">
                                 <a>
-                                    <img class="img-fluid" src="css/img/team2-medium.jpg">
+                                    <img id="weird-img" class="img-fluid" src="css/img/team2-medium.jpg">
                                 </a>
                             </div>
                             <div class="col-md-6">
-                                <div>
+                                <div class="icons-hover-2">
                                     <a>
-                                        <h6>John Doe</h6>
+                                        <h6 class="pt-2">John Doe</h6>
                                     </a>
                                     <a href="#">
                                         <i class="fab fa-twitter pr-1"></i>
@@ -1354,13 +1491,13 @@
                     </div>
                 </div>
                 <div class="row mx-2">
-                    <div class="col-md-12 px-0">
+                    <div class="col-md-12 pt-4 px-0">
                         <h6 class="text-light py-2">CUSTOM VIDEO</h6>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="video">
+                        <div class="m-2" id="video">
                             <img class="img-fluid" src="css/img/videopic.jpg">
                             <div id="play">
                                 <div id="arrow">

@@ -86,7 +86,7 @@ $(function() {
             // Run the numbers
             runTheNumbers(elm.getElementsByClassName("number-to-run")[0]);
 
-            increment += 500;
+            increment += 200;
         }
     }
 
